@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %} {% endblock %} | Charlotte Van Petegem</title>
+        <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="blog/atom.xml", trailing_slash=false) }}">
+        <link rel="stylesheet" href="{{ get_url(path="/style.css") }}">
+    </head>
+
+    <body>
+        <header>
+            <section>
+                <a href="{{ get_url(path="@/_index.md" )}}">Homepage</a>
+            </section>
+            <section>
+                <a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a>
+            </section>
+        </header>
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+        <footer>
+            <section><a href="{{ get_url(path="@/about.md") }}">About me</a></section>
+            <section><a href="{{ get_url(path="blog/atom.xml", trailing_slash=false) }}">Atom/RSS</a></section>
+            <section>This website was lovingly crafted using <a href="https://www.getzola.org" target="_blank" rel="noopener nofollow noreferrer">Zola</a>.</section>
+            </ul>
+        </footer>
+    </body>
+</html>

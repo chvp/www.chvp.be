@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block content %}
+<p>
+Hi! Welcome to my website. It contains mostly blog posts. The three most recent
+blog posts are listed below. Some more info about me is contained in the
+appropiately named <a href="{{ get_url(path="@/about.md")}}">About me</a> page.
+</p>
+<h2>Most recent posts</h2>
+{% set blog_section = get_section(path="blog/_index.md") %}
+<ul class="post-list">
+    {% for page in blog_section.pages | slice(end=3) %}
+    <li>
+        <p><a href="{{ page.permalink | safe }}">{{ page.title }}</a> ({{ page.date }})</p>
+        <p>{{ page.summary | safe }}</p>
+        <p><a href="{{ page.permalink }}#continue-reading">Continue reading&hellip;</a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{{ get_url(path='@/blog/_index.md') }}">All posts</a>
+{% endblock content %}
