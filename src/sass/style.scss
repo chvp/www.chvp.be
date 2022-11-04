@@ -56,3 +56,25 @@ pre {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    header {
+        border-bottom: #ccc 1px solid;
+    }
+    footer {
+        border-top: #ccc 1px solid;
+    }
+
+    body {
+        background: black;
+        color: #ccc;
+    }
+
+    a {
+        color: lightblue;
+        &:visited {
+            color: lightpink;
+        }
+    }
+
+}
