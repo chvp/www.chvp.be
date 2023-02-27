@@ -15,7 +15,7 @@
     flake-utils.lib.eachDefaultSystem
       (system:
         let
-          pkgs = import nixpkgs { inherit system; overlays = [ devshell.overlay ]; };
+          pkgs = import nixpkgs { inherit system; overlays = [ devshell.overlays.default ]; };
           pkg = pkgs.stdenv.mkDerivation {
             pname = "www.chvp.be";
             version = "unstable";
@@ -48,7 +48,7 @@
           };
         }
       ) // {
-      overlay = (curr: prev: {
+      overlays.default = (curr: prev: {
         "www.chvp.be" = self.packages.${curr.system}.default;
       });
     };
