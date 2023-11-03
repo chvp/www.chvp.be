@@ -15,7 +15,7 @@ I will go over why I made it, some light technical details, and plans I have for
 Before I get into the app itself, maybe a short introduction of plain text accounting (PTA) is in order.
 PTA is an ecosystem of programs that all work on the same basic idea.
 You record financial transactions in a plain text file (with some structure imposed by the tool you're using), and the tool can generate reports about those transactions.
-The three main options in this space are [ledger](https://www.ledger-cli.org/), [hledger](https://hledger.org/) and [beancount](https://beancount.github.io/).
+The three main options in this space are [ledger](https://www.ledger-cli.org/), [hledger](https://hledger.org/), and [beancount](https://beancount.github.io/).
 Like all financial tools, the way you use it is tailored to the information you want to get out of it.
 If you want a general overview on your personal finances, that's possible.
 If you want to use it to generate invoices for clients, that's possible.
