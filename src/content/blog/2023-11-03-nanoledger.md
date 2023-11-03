@@ -5,7 +5,7 @@ Tags = ["Android", "PTA", "emacs"]
 +++
 
 In September, I wrote an Android app so I can easily add transactions to my plain text accounting ledger file while on the go.
-It was recently published on F-Droid, so I thought, why not write a blog post about it.
+It was recently [published on F-Droid](https://f-droid.org/en/packages/be.chvp.nanoledger/), so I thought, why not write a blog post about it.
 I will go over why I made it, some light technical details, and plans I have for it in the future.
 
 <!-- more -->
@@ -15,11 +15,11 @@ I will go over why I made it, some light technical details, and plans I have for
 Before I get in to the app itself, maybe a short introduction of plain text accounting (PTA) is in order.
 PTA is an ecosystem of programs that all work on the same basic idea.
 You record financial transactions in a plain text file (with some structure imposed by the tool you're using), and the tool can generate reports about those transactions.
-The three main options in this space are ledger, hledger and beancount.
+The three main options in this space are [ledger](https://www.ledger-cli.org/), [hledger](https://hledger.org/) and [beancount](https://beancount.github.io/).
 Like all financial tools, the way you use it is tailored to the information you want to get out of it.
 If you want a general overview on your personal finances, that's possible.
 If you want to use it to generate invoices for clients, that's possible.
-If you want to know how much money you spent on cheese in the last year, that's also possible.
+If you want to know how much money you spent on cheese in the last year, that's also possible (€ 221.92 for me in 2022).
 I will leave further explanation to [others](https://plaintextaccounting.org/), but definitely check it out if you're interested.
 
 ## Why I wrote this app
