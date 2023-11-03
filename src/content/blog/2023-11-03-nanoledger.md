@@ -66,6 +66,7 @@ These include but are not limited to
 * syntax highlighting of transactions,
 * deleting of transactions, and
 * editing of transactions.
+
 Because of the way I parse the journal files, these last two won't be very simple but I have some ideas on how to go about implementing them.
 
 ## Closing thoughts
