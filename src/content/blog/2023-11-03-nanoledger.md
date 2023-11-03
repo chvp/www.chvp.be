@@ -77,4 +77,3 @@ It seems, however, that others were experiencing the same problems, because I no
 It was very nice to see such a warm response.
 A colleague of mine also started out with PTA because of NanoLedger, which was also quite nice to hear.
 All in all, I'm very happy I took the time to write it.
-
