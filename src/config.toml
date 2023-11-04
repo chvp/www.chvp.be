@@ -12,6 +12,9 @@ build_search_index = false
 
 generate_feed = false
 
+# Ignore images, they should always be processed
+ignored_content = ["*.jpg", "*.png"]
+
 taxonomies = [
   { name = "Tags" }
 ]
