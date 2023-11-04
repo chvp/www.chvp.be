@@ -14,8 +14,8 @@ appropriately named <a href="{{ get_url(path="@/about.md")}}">About me</a> page.
     {% for page in blog_section.pages | slice(end=3) %}
     <li>
         <p><a href="{{ page.permalink | safe }}">{{ page.title }}</a> ({{ page.date }})</p>
-        <p>{{ page.summary | safe }}</p>
-        <p><a href="{{ page.permalink }}#continue-reading">Continue reading&hellip;</a>
+        {{ page.summary | safe }}
+        <p><a href="{{ page.permalink }}#continue-reading">Continue reading&hellip;</a></p>
     </li>
     {% endfor %}
 </ul>
