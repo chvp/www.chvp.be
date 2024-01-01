@@ -1,5 +1,7 @@
 +++
+slug = "unifiedpush-nextcloud-nixos"
 title = "Setting up Nextcloud as a UnifiedPush provider on NixOS"
+date = "2022-11-03"
 [taxonomies]
 Tags = ["Nix", "NixOS", "Fediverse", "Matrix", "Android"]
 +++

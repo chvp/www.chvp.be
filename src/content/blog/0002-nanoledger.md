@@ -1,5 +1,7 @@
 +++
+slug = "nanoledger"
 title = "Introducing NanoLedger, an Android app for recording PTA transactions on the fly"
+date = "2023-11-03"
 [taxonomies]
 Tags = ["Android", "PTA", "Emacs"]
 +++
