@@ -1,8 +1,7 @@
 +++
 slug = "top-albums-2023"
 title = "My favourite albums of 2023"
-draft = true
-date = "2024-01-02"
+date = "2024-01-04"
 [taxonomies]
 Tags = ["Music"]
 +++
@@ -20,7 +19,7 @@ I tried to write something about each album, but mostly it's just that I like th
 Cover art of ANOHNI and the Johnsons' My Back Was a Bridge for You to Cross.
 It's a portrait of Marsha P. Johnson.
 Marsha is looking into the camera, and is wearing earrings and a ring on her ring finger.
-The band name is written (stylised) at the top, the album name is written at the bottom.
+The band name is written (stylized) at the top, the album name is written at the bottom.
 {% end %}
 
 I Am a Bird Now is literally my favourite album of all time, and it holds a lot of personal meaning to me.
@@ -123,7 +122,6 @@ It's just some good, fun pop music.
 Probably not for everybody, but I like it.
 (It's not on this album, but they wrote the better "Wish You Were Gay" song. Instead of Billie Eilish's version, theirs is actually about gay people.)
 
-
 ## Fenne Lily - Big Picture
 
 {% image(path="blog/0003-top-albums-2023/bigpicture.jpg", width=300, height=300, title="Fenne Lily - Big Picture") %}
@@ -137,6 +135,15 @@ After On Hold and BREACH, I was pretty sure this would be a great album.
 My expectations were absolutely met.
 Not much more to say; it's great.
 
+## Forest Swords - Bolted ([Bandcamp](https://forestswords.bandcamp.com/album/bolted))
+
+{% image(path="blog/0003-top-albums-2023/bolted.jpg", width=300, height=300, title="Forest Swords - Bolted") %}
+Cover art of Forest Swords' Bolted.
+There is a grey bust in a cage, on a pedestal.
+{% end %}
+
+Good beats.
+
 ## illuminati hotties - Truck ([Bandcamp](https://illuminatihotties.bandcamp.com/track/truck))
 
 {% image(path="blog/0003-top-albums-2023/truck.jpg", width=300, height=300, title="illuminati hotties - Truck") %}
@@ -149,6 +156,27 @@ The license plate is IH.
 I was really hoping this would be the first single of a new album, but no such luck.
 However, it's still a really fun and cute track.
 Heaven really is a truck.
+
+## Jonah Yano - portrait of a dog ([Bandcamp](https://jonahyano.bandcamp.com/album/portrait-of-a-dog))
+
+{% image(path="blog/0003-top-albums-2023/portrait.jpg", width=300, height=300, title="Jonah Yano - Portrait of a dog") %}
+Cover art of Jonah Yano's Portrait of a dog.
+It is a minimalist drawing of a dog on a leash.
+{% end %}
+
+I find it hard to describe, but it's good.
+Some kind of jazz.
+
+## Lost Girls - Selvutsletter ([Bandcamp](https://lostgirls1000.bandcamp.com/album/selvutsletter))
+
+{% image(path="blog/0003-top-albums-2023/selvutsletter.jpg", width=300, height=300, title="Lost Girls - Selvutsletter") %}
+Cover art of Lost Girls' Selvutsletter.
+It is an abstract painting in yellow, orange and purple.
+{% end %}
+
+A worthy follow-up to 2021's Menneskekollektivet.
+Jenny Hval's lyrics are always great.
+She has an enviable way with words that I can definitely appreciate.
 
 ## Matana Roberts - Coin Coin Chapter Five: In the garden... ([Bandcamp](https://matana-roberts.bandcamp.com/album/coin-coin-chapter-five-in-the-garden))
 
@@ -173,6 +201,18 @@ Lots of live versions of the Pinegrove catalogue.
 I'd almost call it a best-of, since every song on it is great, but they also have a lot of great songs that are not on it.
 The special guests coming on stage on the last few tracks are a fun surprise.
 
+## Reverend Kristin Michael Hayter - SAVED! ([Bandcamp](https://linguaignota.bandcamp.com/album/saved))
+
+{% image(path="blog/0003-top-albums-2023/saved.jpg", width=300, height=300, title="Reverend Kristin Michael Hayter - SAVED!") %}
+Cover art of Reverend Kristin Michael Hayter's SAVED!.
+On the cover there is a black and white picture of a woman in a white, stained dress.
+She is holding up a book in a preacher-like way.
+{% end %}
+
+New music by Kristin Hayter, the person behind Lingua Ignota.
+It's definitely a stylistic break from her previous work.
+I hope the "SAVED!" refers to herself, given the story behind her previous work.
+
 ## Sigur Rós - ÁTTA ([Bandcamp](https://sigurros.bandcamp.com/album/tta))
 
 {% image(path="blog/0003-top-albums-2023/atta.jpg", width=300, height=300, title="Sigur Rós - ÁTTA") %}
@@ -183,6 +223,15 @@ The fire was started from the bottom.
 
 Kjartan rejoined Jónsi and Georg for this album, and it's a great comeback.
 While far less punchy than 2013's Kveikur (a style change that I definitely appreciated), it's still a beautiful Sigur Rós album.
+
+## Sofia Kourtesis - Madres ([Bandcamp](https://sofiakourtesis.bandcamp.com/album/madres-2))
+
+{% image(path="blog/0003-top-albums-2023/madres.jpg", width=300, height=300, title="Sofia Kourtesis - Madres") %}
+Cover art of Sofia Kourtesis' Madres.
+It shows Sofia sitting by a cliff. The sea can be seen in the background.
+{% end %}
+
+I don't understand the lyrics, but the music is great.
 
 ## Sufjan Stevens - Javelin ([Bandcamp](https://sufjanstevens.bandcamp.com/album/javelin))
 
@@ -197,6 +246,17 @@ Sufjan is a great artist who has proven himself time and time again.
 This time is no different; it's a lovely album.
 The personal story behind it is also very gripping.
 It was funny to see that the music media treated that story as his "coming out", even though anyone with half an ear who had listened to his music could have known that he was at least some kind of queer.
+
+## Tate McRae - Think Later ([Bandcamp](https://tatemcraeofficial.bandcamp.com/album/think-later))
+
+{% image(path="blog/0003-top-albums-2023/thinklater.jpg", width=300, height=300, title="Tate McRae - Think Later") %}
+Cover art of Tate McRae's Think Later.
+Tate McRae is pictured, wearing a black tank top, Tanga panties and big ice hockey pads (typically worn by goalies).
+The words Think Later are written on the pads.
+{% end %}
+
+Canada seems to be good at churning out underrated pop stars with "Rae" in their name.
+Lots of fresh fun tracks on this (but you have to like the genre).
 
 ## Tirzah - trip9love...??? ([Bandcamp](https://tirzah.bandcamp.com/album/trip9love))
 
