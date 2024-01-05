@@ -8,7 +8,7 @@ Tags = ["Music"]
 
 Like [in 2022](@/blog/0001-top-albums-2022/index.md), I listened to a lot of new music in 2023.
 This is a list of some of my favourite albums from last year.
-It's in alphabetic order, because actually ranking albums is very hard when they're very different styles.
+It's in alphabetical order, because actually ranking albums is very hard when they're very different styles.
 I tried to write something about each album, but mostly it's just that I like the music.
 
 <!-- more -->
@@ -69,7 +69,7 @@ They are quite hard to see, due to the low light conditions when the photo was t
 
 Yeah, yeah, another boygenius release, I know.
 But it's also great.
-At first, I was not as impressed as I was with the record, but it really grew on me after a while.
+At first, I was not as impressed as I was with "the record", but it really grew on me after a while.
 
 ## Carly Rae Jepsen - The Loveliest Time ([Discogs](https://www.discogs.com/master/3184269-Carly-Rae-Jepsen-The-Loveliest-Time))
 
@@ -176,7 +176,7 @@ It is an abstract painting in yellow, orange and purple.
 
 A worthy follow-up to 2021's Menneskekollektivet.
 Jenny Hval's lyrics are always great.
-She has an enviable way with words that I can definitely appreciate.
+She has an inimitable way with words that I can definitely appreciate.
 
 ## Matana Roberts - Coin Coin Chapter Five: In the garden... ([Bandcamp](https://matana-roberts.bandcamp.com/album/coin-coin-chapter-five-in-the-garden))
 
@@ -186,7 +186,7 @@ It's a collage of pictures of eyes, with some pages from a book and maps in the 
 There are also a number of torn up pieces of paper.
 {% end %}
 
-Matana Roberts keeps putting out great music is the Coin Coin album series.
+Matana Roberts keeps putting out great music in the Coin Coin album series.
 It never gets boring and it's always bringing new ideas.
 
 ## Pinegrove - Montclair (Live at the Wellmont Theater) ([Bandcamp](https://pinegrove.bandcamp.com/album/montclair-live-at-the-wellmont-theater))
