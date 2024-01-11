@@ -1,6 +1,7 @@
 +++
 slug = "top-albums-2024"
 title = "My favourite albums of 2024"
+draft = true
 date = "2025-01-01"
 [taxonomies]
 Tags = ["Music"]
