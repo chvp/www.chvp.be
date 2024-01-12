@@ -14,7 +14,7 @@ I tried to write something about each album, but mostly it's just that I like th
 
 <!-- more -->
 
-## Marika Hackman - Big Sigh ([Bandcamp]())
+## Marika Hackman - Big Sigh ([Bandcamp](https://marikahackmanmusic.bandcamp.com/album/big-sigh))
 
 {% image(path="blog/xxxx-top-albums-2024/bigsigh.jpg", width=300, height=300, title="Marika Hackman - Big Sigh") %}
 Cover art of Marika Hackman's Big Sigh.
