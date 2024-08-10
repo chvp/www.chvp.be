@@ -1,6 +1,6 @@
 +++
 title = "Posts"
 sort_by = "date"
-generate_feed = true
+generate_feeds = true
 page_template = "post.html"
 +++
