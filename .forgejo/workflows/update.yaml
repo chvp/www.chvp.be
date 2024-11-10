@@ -1,0 +1,34 @@
+name: Update
+
+on:
+  schedule:
+    - cron: '28 * * * *'
+  workflow_dispatch:
+
+env:
+  USER: root
+
+jobs:
+  update:
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v4
+      - run: apt update && apt install -y sudo
+      - uses: https://github.com/cachix/install-nix-action@v30
+        with:
+          enable_kvm: false
+          github_access_token: '${{ secrets.ACCESS_TOKEN_GITHUB }}'
+      - name: Cachix
+        uses: https://github.com/cachix/cachix-action@v15
+        with:
+          name: chvp
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          skipPush: true
+      - run: nix flake update
+      - run: nix build -L --no-link .#packages.x86_64-linux.default
+      - run: nix build -L --no-link .#devShells.x86_64-linux.default
+      - run: nix eval --json ".#packages.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | cachix push chvp
+      - run: nix eval --json ".#devShells.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | cachix push chvp
+      - uses: https://github.com/stefanzweifel/git-auto-commit-action@v5.0.1
+        with:
+          commit_message: "Update dependencies"

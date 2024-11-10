@@ -1,0 +1,29 @@
+name: Cachix
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  USER: root
+
+jobs:
+  build:
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v4
+      - run: apt update && apt install -y sudo
+      - uses: https://github.com/cachix/install-nix-action@v30
+        with:
+          enable_kvm: false
+          github_access_token: '${{ secrets.ACCESS_TOKEN_GITHUB }}'
+      - name: Cachix
+        uses: https://github.com/cachix/cachix-action@v15
+        with:
+          name: chvp
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          skipPush: true
+      - run: nix build -L --no-link .#packages.x86_64-linux.default
+      - run: nix build -L --no-link .#devShells.x86_64-linux.default
+      - run: nix eval --json ".#packages.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | cachix push chvp
+      - run: nix eval --json ".#devShells.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | cachix push chvp
