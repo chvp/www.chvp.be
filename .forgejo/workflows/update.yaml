@@ -29,7 +29,7 @@ jobs:
       - run: nix build -L --no-link .#devShells.x86_64-linux.default
       - run: nix eval --json ".#packages.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | cachix push chvp
       - run: nix eval --json ".#devShells.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | cachix push chvp
-      - uses: https://github.com/stefanzweifel/git-auto-commit-action@v5.2.0
+      - uses: https://github.com/stefanzweifel/git-auto-commit-action@v6.0.0
         with:
           commit_message: "Update dependencies"
           commit_user_name: "CharBOTte"
