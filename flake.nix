@@ -50,7 +50,7 @@
         }
       ) // {
       overlays.default = (curr: prev: {
-        "www.chvp.be" = self.packages.${curr.system}.default;
+        "www.chvp.be" = self.packages.${curr.stdenv.hostPlatform.system}.default;
       });
     };
 }
