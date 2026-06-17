@@ -5,34 +5,36 @@ on:
     - cron: '35 * * * *'
   workflow_dispatch:
 
-env:
-  USER: root
-
 jobs:
   update:
     runs-on: docker
     steps:
-      - uses: actions/checkout@v6
-      - run: apt update && apt install -y sudo
-      - uses: https://github.com/cachix/install-nix-action@v31
-        with:
-          enable_kvm: false
-          github_access_token: '${{ secrets.ACCESS_TOKEN_GITHUB }}'
-      - name: Attic
-        uses: https://github.com/ryanccn/attic-action@v0
-        with:
-          endpoint: https://attic.chvp.be
-          cache: chvp
-          token: '${{ secrets.ATTIC_AUTH_TOKEN }}'
-          skip-push: true
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up nix
+        run: |
+          mkdir -p $HOME/.config/nix
+          cat <<CONFIG > $HOME/.config/nix/nix.conf
+          access-tokens = github.com=${{ secrets.ACCESS_TOKEN_GITHUB }}
+          cores = 2
+          max-jobs = 2
+          CONFIG
+      - name: Set up attic
+        run: attic login --set-default chvp https://attic.chvp.be "${{ secrets.ATTIC_AUTH_TOKEN }}"
       - run: nix flake update
       - run: nix build -L --no-link .#packages.x86_64-linux.default
       - run: nix build -L --no-link .#devShells.x86_64-linux.default
       - run: nix eval --json ".#packages.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | attic push chvp --stdin
       - run: nix eval --json ".#devShells.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | attic push chvp --stdin
-      - uses: https://github.com/stefanzweifel/git-auto-commit-action@v7.1.0
-        with:
-          commit_message: "Update dependencies"
-          commit_user_name: "CharBOTte"
-          commit_user_email: "commit-bot@chvp.be"
-          commit_author: "CharBOTte <commit-bot@chvp.be>"
+      - name: Commit and push
+        if: ${{ success() }}
+        run: |
+          if [ "$(git status --porcelain=v1 | wc -l)" != "0" ]
+          then
+            git status --porcelain=v1
+            git add .
+            git -c "user.name=CharBOTte" -c "user.email=commit-bot@chvp.be" commit -m "Update dependencies"
+            git push origin
+          else
+            echo "Nothing to commit"
+          fi
