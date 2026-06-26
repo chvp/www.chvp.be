@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
+      - name: Set up extra git auth
+        run: |
+          git config --local "includeIf.gitdir:$(pwd)/.git.path" "$(git config --local includeIf.gitdir:$(pwd | sed 's#private/##')/.git.path)"
       - name: Set up nix
         run: |
           mkdir -p $HOME/.config/nix
