@@ -11,7 +11,7 @@ appropriately named <a href="{{ get_url(path="@/about.md")}}">About me</a> page.
 <h2>Most recent posts</h2>
 {% set blog_section = get_section(path="blog/_index.md") %}
 <ul class="post-list">
-    {% for page in blog_section.pages | slice(end=3) %}
+    {% for page in blog_section.pages[:3] %}
     <li>
         <p><a href="{{ page.permalink | safe }}">{{ page.title }}</a> ({{ page.date }})</p>
         {{ page.summary | safe }}
