@@ -1,8 +1,11 @@
 {
   description = "Development of personal website";
   inputs = {
-    super.url = "../";
-    nixpkgs.follows = "super/nixpkgs";
+    super = {
+      url = "../";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
     devshell = {
       url = "github:numtide/devshell";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -36,16 +36,15 @@
     "root": {
       "inputs": {
         "devshell": "devshell",
-        "nixpkgs": [
-          "super",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs",
         "super": "super"
       }
     },
     "super": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "path": "../",
