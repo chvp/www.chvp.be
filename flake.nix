@@ -9,8 +9,8 @@
       default = inputs.self.packages.${system}."www.chvp.be";
     }) inputs.nixpkgs.legacyPackages;
     overlays.default = (
-      curr: prev: {
-        "www.chvp.be" = inputs.self.packages.${curr.stdenv.hostPlatform.system}.default;
+      self: super: {
+        "www.chvp.be" = self.callPackage ./default.nix { };
       }
     );
   };
