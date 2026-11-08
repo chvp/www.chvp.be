@@ -21,7 +21,5 @@ jobs:
           CONFIG
       - name: Set up attic
         run: attic login --set-default chvp https://attic.chvp.be "${{ secrets.ATTIC_AUTH_TOKEN }}"
-      - run: nix build -L --no-link .#packages.x86_64-linux.default
-      - run: nix build -L --no-link .#devShells.x86_64-linux.default
-      - run: nix eval --json ".#packages.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | attic push chvp --stdin
-      - run: nix eval --json ".#devShells.x86_64-linux.default.outPath" | sed 's/"\(.*\)"/\1/' | attic push chvp --stdin
+      - run: nix build -L --no-link --print-out-paths .#packages.x86_64-linux.default | xargs attic push chvp
+      - run: nix build -L --no-link --print-out-paths ./dev#devShells.x86_64-linux.default | xargs attic push chvp

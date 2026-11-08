@@ -1,6 +1,7 @@
-{ stdenv
-, zola
-, cacert
+{
+  stdenv,
+  zola,
+  cacert,
 }:
 
 stdenv.mkDerivation {
@@ -8,7 +9,10 @@ stdenv.mkDerivation {
   version = "unstable";
   src = ./src;
 
-  nativeBuildInputs = [ zola cacert ];
+  nativeBuildInputs = [
+    zola
+    cacert
+  ];
 
   buildPhase = "zola build";
   installPhase = "cp -r public $out";
